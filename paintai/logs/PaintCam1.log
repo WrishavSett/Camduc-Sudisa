@@ -1,0 +1,21 @@
+2024-12-24 15:03:27,245 - PaintCam1 - MainThread - __init__ - INFO - Begin Probing RTSP Stream for camera :- rtsp://localhost:18554/mystream
+2024-12-24 15:03:30,375 - PaintCam1 - MainThread - __init__ - INFO - fps: 20/1
+2024-12-24 15:03:30,384 - PaintCam1 - MainThread - __init__ - INFO - fps: 20.0 and height:-1440 and width:- 2560
+2024-12-24 15:03:30,384 - PaintCam1 - MainThread - run_threads - INFO - running threads
+2024-12-24 15:04:32,980 - PaintCam1 - MainThread - __init__ - INFO - Begin Probing RTSP Stream for camera :- rtsp://localhost:18554/mystream
+2024-12-24 15:04:36,146 - PaintCam1 - MainThread - __init__ - INFO - fps: 20/1
+2024-12-24 15:04:36,151 - PaintCam1 - MainThread - __init__ - INFO - fps: 20.0 and height:-1440 and width:- 2560
+2024-12-24 15:04:36,152 - PaintCam1 - MainThread - run_threads - INFO - running threads
+2024-12-24 15:07:56,763 - PaintCam1 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2024-12-24 15:10:49,908 - PaintCam1 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2024-12-24 15:13:58,573 - PaintCam1 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2024-12-24 15:17:04,134 - PaintCam1 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2024-12-24 15:20:08,975 - PaintCam1 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2024-12-24 15:23:16,644 - PaintCam1 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2024-12-24 15:26:12,537 - PaintCam1 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2024-12-24 15:29:12,617 - PaintCam1 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2024-12-24 15:32:05,322 - PaintCam1 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2024-12-24 15:34:38,423 - PaintCam1 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2024-12-24 15:38:25,777 - PaintCam1 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2024-12-24 21:02:34,282 - PaintCam1 - MainThread - __init__ - INFO - Begin Probing RTSP Stream for camera :- rtsp://localhost:18554/mystream
+2024-12-25 09:44:28,771 - PaintCam1 - MainThread - __init__ - INFO - Begin Probing RTSP Stream for camera :- rtsp://localhost:18554/mystream
