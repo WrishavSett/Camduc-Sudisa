@@ -14,7 +14,7 @@ region_points = [(1250, 0), (1250, 1440)]  # For line counting
 # region_points = [(20, 400), (1080, 400), (1080, 360), (20, 360), (20, 400)]  # For polygon region counting
 
 # Video writer
-video_writer = cv2.VideoWriter("object_counting_output.mp4", cv2.VideoWriter_fourcc(*"mp4v"), fps, (int(w/2), int(h/2)))
+video_writer = cv2.VideoWriter("object_counting_output.mp4", cv2.VideoWriter_fourcc(*"mp4v"), fps, (w, h))
 
 # Init ObjectCounter
 counter = solutions.ObjectCounter(
