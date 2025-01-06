@@ -94,6 +94,7 @@ class CAMERAMODEL():
         while True:
             try:
                 in_bytes = self.process1.stdout.read(self.width * self.height * 3)
+                # print(datetime.now(), in_bytes[:100])
                 if not in_bytes:
                     self.logger.info("Some Issue with reading from STDOUT")
                     time.sleep(20)
