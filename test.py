@@ -3,14 +3,14 @@ import cv2
 from ultralytics import solutions
 
 # rtsp_stream = "rtsp://localhost:18554/mystream"
-rtsp_stream = "D:/SUDISA/recordings/Nov-19-2024/recording_20241119_112349.mp4"
+rtsp_stream = "D:/RohitDa/Camduc/paintai/videos/20250109_112835.mp4"
 cap = cv2.VideoCapture(rtsp_stream)
 assert cap.isOpened(), "Error reading video file"
 w, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH, cv2.CAP_PROP_FRAME_HEIGHT, cv2.CAP_PROP_FPS))
 
 # Define region points
 region_points = [(1250, 0), (1250, 1440)]  # For line counting
-# region_points = [(20, 400), (1080, 400), (1080, 360), (20, 360)]  # For rectangle region counting
+# region_points = [(1500, 100), (1700, 100), (1700, 1350), (1500, 1350)]  # For rectangle region counting
 # region_points = [(20, 400), (1080, 400), (1080, 360), (20, 360), (20, 400)]  # For polygon region counting
 
 # Video writer
@@ -18,7 +18,7 @@ video_writer = cv2.VideoWriter("object_counting_output.mp4", cv2.VideoWriter_fou
 
 # Init ObjectCounter
 counter = solutions.ObjectCounter(
-    show=True,  # Display the output
+    show=False,  # Display the output
     region=region_points,  # Pass region points
     model="SudisaItem12K.pt",  # model="yolo11n-obb.pt" for object counting using YOLO11 OBB model.
     # classes=[0, 2],  # If you want to count specific classes i.e person and car with COCO pretrained model.
