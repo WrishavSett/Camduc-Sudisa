@@ -6,7 +6,6 @@ from ultralytics.utils.plotting import Annotator, colors
 
 class ObjectCounter(BaseSolution):
 
-
     def __init__(self, **kwargs):
         """Initializes the ObjectCounter class for real-time object counting in video streams."""
         super().__init__(**kwargs)
@@ -16,6 +15,7 @@ class ObjectCounter(BaseSolution):
         self.counted_ids = []  # List of IDs of objects that have been counted
         self.classwise_counts = {}  # Dictionary for counts, categorized by object class
         self.region_initialized = False  # Bool variable for region initialization
+        
         self.show_in = self.CFG["show_in"]
         self.show_out = self.CFG["show_out"]
 
@@ -24,6 +24,7 @@ class ObjectCounter(BaseSolution):
         self.out_count = 0  # Counter for objects moving outward
         self.counted_ids = []  # List of IDs of objects that have been counted
         self.classwise_counts = {}  # Dictionary for counts, categorized by object class
+    
     def count_objects(self, current_centroid, track_id, prev_position, cls):
         """
         Counts objects within a polygonal or linear region based on their tracks.
@@ -157,7 +158,6 @@ class ObjectCounter(BaseSolution):
         for box, track_id, cls in zip(self.boxes, self.track_ids, self.clss):
             self.store_tracking_history(track_id, box)  # Store track history
             self.store_classwise_counts(cls)  # store classwise counts in dict
-
 
             current_centroid = ((box[0] + box[2]) / 2, (box[1] + box[3]) / 2)
             # store previous position of track for object counting
