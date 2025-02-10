@@ -22,8 +22,7 @@ class CAMERAMODEL():
             "url": "http://localhost:8000/ai/getcampayload",
             "logdir": "D:/RohitDa/Camduc/paintai/logs",
             "imgdir": "D:/RohitDa/Camduc/paintai/imgs",
-            "rtsp_url": "D:/RohitDa/Camduc/output_part_1.mp4",
-            "output_video": "D:/RohitDa/Camduc/output_video_1.mp4"
+            "rtsp_url": "D:/RohitDa/Camduc/output_part_1.mp4"
         }
 
         # Ensure directories exist
@@ -106,26 +105,26 @@ class CAMERAMODEL():
                 
                 Frame = np.frombuffer(in_bytes, np.uint8).reshape([self.height, self.width, 3])
                 
-                # Make sure the array is writable
-                Frame = np.frombuffer(in_bytes, np.uint8).reshape([self.height, self.width, 3]).copy()
+                # # Make sure the array is writable
+                # Frame = np.frombuffer(in_bytes, np.uint8).reshape([self.height, self.width, 3]).copy()
 
                 if Frame is not None:
                     _ = self.counter.count(Frame)
 
-                    # Draw the region line
-                    line_color = (0, 255, 0)  # Green
-                    line_thickness = 3
-                    start_point, end_point = self.camera_config["region_points"]
-                    cv2.line(Frame, start_point, end_point, line_color, line_thickness)
+                    # # Draw the region line
+                    # line_color = (0, 255, 0)  # Green
+                    # line_thickness = 3
+                    # start_point, end_point = self.camera_config["region_points"]
+                    # cv2.line(Frame, start_point, end_point, line_color, line_thickness)
 
-                    # Draw the object count at the top right
-                    text = f"Count: {sum(v for v in self.counter.classwise_counts.values() if isinstance(v, int))}"
-                    text_color = (0, 0, 255)  # Red
-                    font = cv2.FONT_HERSHEY_SIMPLEX
-                    cv2.putText(Frame, text, (self.width - 200, 50), font, 1, text_color, 2, cv2.LINE_AA)
+                    # # Draw the object count at the top right
+                    # text = f"Count: {sum(v for v in self.counter.classwise_counts.values() if isinstance(v, int))}"
+                    # text_color = (0, 0, 255)  # Red
+                    # font = cv2.FONT_HERSHEY_SIMPLEX
+                    # cv2.putText(Frame, text, (self.width - 200, 50), font, 1, text_color, 2, cv2.LINE_AA)
 
-                    # Write frame to output video
-                    self.out.write(Frame)
+                    # # Write frame to output video
+                    # self.out.write(Frame)
                     
                     frame_count += 1
 
