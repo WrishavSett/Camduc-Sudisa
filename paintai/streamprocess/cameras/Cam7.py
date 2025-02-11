@@ -70,8 +70,8 @@ class CAMERAMODEL():
             self.logger.info(f"fps: {self.fps}, height: {self.height}, width: {self.width}")
             
             # Initialize video writer
-            fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-            self.out = cv2.VideoWriter(self.camera_config["output_video"], fourcc, self.fps, (self.width, self.height))
+            # fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+            # self.out = cv2.VideoWriter(self.camera_config["output_video"], fourcc, self.fps, (self.width, self.height))
 
         except Exception as e:
             self.logger.error("Failed to Probe RTSP Stream")
@@ -158,7 +158,7 @@ class CAMERAMODEL():
             headers = {'Content-Type': 'application/json'}
         try:
             response = requests.post(self.camera_config["url"], json=json_body, headers=headers)
-            response.raise_for_status()  # Raise HTTPError for bad responses (4xx and 5xx)
+            response.raise_for_status()
             return True
         except requests.exceptions.RequestException as e:
             self.logger.error(f"Error sending POST request: {e}")

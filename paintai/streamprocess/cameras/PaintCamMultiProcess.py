@@ -5,13 +5,15 @@ import torch
 import ffmpeg
 import logging
 import requests
+import threading
 import numpy as np
+import multiprocessing
 from datetime import datetime
-from concurrent.futures import ThreadPoolExecutor
 from ObjectCount import ObjectCounter
+from concurrent.futures import ThreadPoolExecutor
 
 # Set CUDA to use GPU
-torch.cuda.set_device(0)
+# torch.cuda.set_device(0)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 class CAMERAMODEL():
@@ -48,11 +50,12 @@ class CAMERAMODEL():
         )
 
         # Optimize model with torch.compile()
-        self.counter.model = torch.compile(self.counter.model)
+        # self.counter.model = torch.compile(self.counter.model)
 
         self.rtsp_url = self.camera_config['rtsp_url']
         self.update_duration = 60
         self.args = {}
+        self.cache = {}
 
         try:
             self.logger.info(f"Begin Probing RTSP Stream for camera: {self.rtsp_url}")
@@ -71,12 +74,13 @@ class CAMERAMODEL():
 
     def process(self):
         """Optimized FFmpeg processing with GPU acceleration."""
+        # .input(self.rtsp_url, hwaccel="cuda", hwaccel_output_format="cuda", vcodec="h264_cuvid")
         return (
             ffmpeg
-            .input(self.rtsp_url, hwaccel="cuda", hwaccel_output_format="cuda", vcodec="h264_cuvid")
+            .input(self.rtsp_url, **self.args)
             .output('pipe:', format='rawvideo', pix_fmt='bgr24')
             .overwrite_output()
-            .run_async(pipe_stdout=True)
+            .run_async(pipe_stdout=True, pipe_stderr=True)
         )
 
     def enqueue_frame_buffer(self):
@@ -97,13 +101,16 @@ class CAMERAMODEL():
                 
                 Frame = np.frombuffer(in_bytes, np.uint8).reshape([self.height, self.width, 3])
                 
-                # Convert Frame to float16 to optimize memory & speed
-                Frame = Frame.astype(np.float16)
+                # # Convert Frame to float16 to optimize memory & speed
+                # Frame = Frame.astype(np.float16)
 
-                if Frame is not None:
-                    with torch.no_grad():  # Optimized inference
-                        _ = self.counter.count(Frame)
+                # if Frame is not None:
+                #     with torch.no_grad():  # Optimized inference
+                #         _ = self.counter.count(Frame)
                     
+                if Frame is not None:
+                    _ = self.counter.count(Frame)
+                        
                     frame_count += 1
 
                     if frame_count % (self.fps * self.update_duration) == 0:
@@ -143,17 +150,28 @@ class CAMERAMODEL():
 
 if __name__ == "__main__":
     cameras = [
-        {"camera": "Cam1", "camera_id": 1, "region_points": [(1250, 0), (1250, 1440)],
-         "url": "http://localhost:8000/ai/getcampayload", "logdir": "logs", "imgdir": "imgs",
-         "rtsp_url": "rtsp://camera1"},
+        {"camera": "Cam1", 
+         "camera_id": 1, 
+         "region_points": [(1250, 0), (1250, 1440)],
+         "url": "http://localhost:8000/ai/getcampayload", 
+         "logdir": "D:\RohitDa\Camduc\paintai\logs", 
+         "imgdir": "D:\RohitDa\Camduc\paintai\imgs",
+         "rtsp_url": "D:\RohitDa\Camduc\output_part_1.mp4"},
         
-        {"camera": "Cam2", "camera_id": 2, "region_points": [(1200, 0), (1200, 1440)],
-         "url": "http://localhost:8000/ai/getcampayload", "logdir": "logs", "imgdir": "imgs",
-         "rtsp_url": "rtsp://camera2"},
+        {"camera": "Cam2", 
+         "camera_id": 2, 
+         "region_points": [(1250, 0), (1250, 1440)],
+         "url": "http://localhost:8000/ai/getcampayload", 
+         "logdir": "D:\RohitDa\Camduc\paintai\logs", 
+         "imgdir": "D:\RohitDa\Camduc\paintai\imgs",
+         "rtsp_url": "D:\RohitDa\Camduc\output_part_1.mp4"},
         
-        {"camera": "Cam3", "camera_id": 3, "region_points": [(1300, 0), (1300, 1440)],
-         "url": "http://localhost:8000/ai/getcampayload", "logdir": "logs", "imgdir": "imgs",
-         "rtsp_url": "rtsp://camera3"},
+        {"camera": "Cam3", 
+         "camera_id": 3, "region_points": [(1250, 0), (1250, 1440)],
+         "url": "http://localhost:8000/ai/getcampayload", 
+         "logdir": "D:\RohitDa\Camduc\paintai\logs", 
+         "imgdir": "D:\RohitDa\Camduc\paintai\imgs",
+         "rtsp_url": "D:\RohitDa\Camduc\output_part_1.mp4"},
         
         # Add more cameras as needed...
     ]
@@ -162,6 +180,22 @@ if __name__ == "__main__":
         rtsp_obj = CAMERAMODEL(config)
         rtsp_obj.run_threads()
 
-    # Run multiple cameras in parallel using threads
-    with ThreadPoolExecutor(max_workers=len(cameras)) as executor:
-        executor.map(run_camera, cameras)
+    # # Run multiple cameras in parallel using threads
+    # with ThreadPoolExecutor(max_workers=len(cameras)) as executor:
+    #     executor.map(run_camera, cameras)
+    
+    # threads = []
+    # for cam in cameras:
+    #     t = threading.Thread(target=run_camera, args=(cam,))
+    #     threads.append(t)
+    #     t.start()
+    # for t in threads:
+    #     t.join()
+
+    # processes = []
+    # for cam in cameras:
+    #     process = multiprocessing.Process(target=run_camera, args=(cam,))
+    #     processes.append(process)
+    #     process.start()
+    # for process in processes:
+    #     process.join()
