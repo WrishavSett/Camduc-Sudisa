@@ -1,0 +1,259 @@
+2025-03-19 12:06:58,834 - Cam66 - MainThread - __init__ - INFO - Begin Probing RTSP Stream for camera :- rtsp://admin:hikvision%23123@192.168.3.66:554/Streaming/channels/101
+2025-03-19 12:07:00,091 - Cam66 - MainThread - __init__ - INFO - fps: 20/1
+2025-03-19 12:07:00,093 - Cam66 - MainThread - __init__ - INFO - fps: 20.0 and height:-1440 and width:- 2560
+2025-03-19 12:07:00,094 - Cam66 - MainThread - run_threads - INFO - running threads
+2025-03-19 12:07:39,108 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:08:25,053 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:10:10,433 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:10:56,095 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 12:10:56,095 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 2}, 'starttime': '2025-03-19T12:07:00.097650', 'endtime': '2025-03-19T12:10:55.089219', 'cameraid': 2})
+2025-03-19 12:12:00,398 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:12:43,242 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:13:36,147 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:14:19,424 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 12:14:19,424 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 3}, 'starttime': '2025-03-19T12:10:56.095277', 'endtime': '2025-03-19T12:14:18.414436', 'cameraid': 2})
+2025-03-19 12:14:28,018 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:15:11,516 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:17:13,064 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:17:55,839 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:18:26,449 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 12:18:26,449 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 3}, 'starttime': '2025-03-19T12:14:19.424257', 'endtime': '2025-03-19T12:18:25.440778', 'cameraid': 2})
+2025-03-19 12:19:11,949 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:20:30,090 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:21:14,258 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:22:00,564 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:22:19,705 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 12:22:19,705 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 2}, 'starttime': '2025-03-19T12:18:26.449167', 'endtime': '2025-03-19T12:22:18.697039', 'cameraid': 2})
+2025-03-19 12:23:14,858 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:23:57,389 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:24:40,985 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:25:25,064 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:26:35,823 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 12:26:35,823 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 6}, 'starttime': '2025-03-19T12:22:19.705341', 'endtime': '2025-03-19T12:26:34.816235', 'cameraid': 2})
+2025-03-19 12:26:42,933 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:27:26,785 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:28:10,446 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:29:33,404 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:30:22,281 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:30:55,673 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 12:30:55,673 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 4}, 'starttime': '2025-03-19T12:26:35.823841', 'endtime': '2025-03-19T12:30:54.666726', 'cameraid': 2})
+2025-03-19 12:31:06,771 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:32:25,042 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:32:51,444 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:34:32,317 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:35:10,829 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 12:35:10,829 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 1}, 'starttime': '2025-03-19T12:30:55.673478', 'endtime': '2025-03-19T12:35:09.820369', 'cameraid': 2})
+2025-03-19 12:36:09,450 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:36:52,313 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:37:34,959 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:38:15,031 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:39:10,402 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 12:39:10,402 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 2}, 'starttime': '2025-03-19T12:35:10.829036', 'endtime': '2025-03-19T12:39:09.395678', 'cameraid': 2})
+2025-03-19 12:39:50,345 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:40:34,229 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:41:51,272 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:42:55,069 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 12:42:55,069 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 0}, 'starttime': '2025-03-19T12:39:10.402383', 'endtime': '2025-03-19T12:42:54.061165', 'cameraid': 2})
+2025-03-19 12:43:22,371 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:45:13,830 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:45:53,760 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 12:45:53,760 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 0}, 'starttime': '2025-03-19T12:42:55.069102', 'endtime': '2025-03-19T12:45:52.750852', 'cameraid': 2})
+2025-03-19 12:46:32,018 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:47:43,063 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:48:25,225 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:49:07,554 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:49:52,001 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:50:14,143 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 12:50:14,143 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 3}, 'starttime': '2025-03-19T12:45:53.760719', 'endtime': '2025-03-19T12:50:13.138114', 'cameraid': 2})
+2025-03-19 12:50:56,386 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:51:42,376 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:53:10,724 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:53:54,133 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:54:10,124 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 12:54:10,124 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 2}, 'starttime': '2025-03-19T12:50:14.143911', 'endtime': '2025-03-19T12:54:09.117030', 'cameraid': 2})
+2025-03-19 12:55:05,332 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:56:11,209 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:57:18,790 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:58:05,046 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 12:58:05,046 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 4}, 'starttime': '2025-03-19T12:54:10.124237', 'endtime': '2025-03-19T12:58:04.041046', 'cameraid': 2})
+2025-03-19 12:58:31,706 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 12:59:15,792 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:01:56,130 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:01:56,130 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 2, 'OUT': 2}, 'starttime': '2025-03-19T12:58:05.046480', 'endtime': '2025-03-19T13:01:55.125327', 'cameraid': 2})
+2025-03-19 13:02:51,441 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:04:51,318 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:05:33,676 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:05:58,821 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:05:58,821 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 1}, 'starttime': '2025-03-19T13:01:56.130596', 'endtime': '2025-03-19T13:05:57.815682', 'cameraid': 2})
+2025-03-19 13:08:40,788 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:09:23,635 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:09:46,358 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:09:46,359 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 0}, 'starttime': '2025-03-19T13:05:58.821697', 'endtime': '2025-03-19T13:09:45.350639', 'cameraid': 2})
+2025-03-19 13:09:48,659 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:11:13,345 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:11:58,324 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:12:40,268 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:13:59,739 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:13:59,739 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 1}, 'starttime': '2025-03-19T13:09:46.359095', 'endtime': '2025-03-19T13:13:58.730541', 'cameraid': 2})
+2025-03-19 13:15:05,036 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:15:49,208 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:17:01,009 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:17:46,441 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:18:14,560 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:18:14,560 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 0}, 'starttime': '2025-03-19T13:13:59.739150', 'endtime': '2025-03-19T13:18:13.548918', 'cameraid': 2})
+2025-03-19 13:18:33,332 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:20:58,268 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:22:06,496 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:22:06,496 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 0}, 'starttime': '2025-03-19T13:18:14.560705', 'endtime': '2025-03-19T13:22:05.489770', 'cameraid': 2})
+2025-03-19 13:23:29,077 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:24:47,367 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:25:17,145 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:26:08,262 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:26:08,262 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 0}, 'starttime': '2025-03-19T13:22:06.496008', 'endtime': '2025-03-19T13:26:07.252089', 'cameraid': 2})
+2025-03-19 13:26:45,874 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:28:17,740 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:29:37,904 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:29:37,904 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 0}, 'starttime': '2025-03-19T13:26:08.262162', 'endtime': '2025-03-19T13:29:36.898237', 'cameraid': 2})
+2025-03-19 13:30:41,166 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:31:25,859 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:32:17,806 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:33:02,398 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:33:53,709 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:33:53,709 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 0}, 'starttime': '2025-03-19T13:29:37.904492', 'endtime': '2025-03-19T13:33:52.703146', 'cameraid': 2})
+2025-03-19 13:34:47,223 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:36:03,342 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:37:14,968 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:37:48,512 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:37:48,512 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 0}, 'starttime': '2025-03-19T13:33:53.709509', 'endtime': '2025-03-19T13:37:47.503638', 'cameraid': 2})
+2025-03-19 13:38:00,792 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:38:45,545 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:40:11,329 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:41:47,329 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:41:47,329 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 1}, 'starttime': '2025-03-19T13:37:48.512030', 'endtime': '2025-03-19T13:41:46.321207', 'cameraid': 2})
+2025-03-19 13:43:09,697 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:43:56,340 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:44:43,116 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:45:53,664 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:45:53,664 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 0}, 'starttime': '2025-03-19T13:41:47.329185', 'endtime': '2025-03-19T13:45:52.656771', 'cameraid': 2})
+2025-03-19 13:46:10,495 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:46:53,700 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:47:36,092 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:48:51,969 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:50:04,503 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:50:04,503 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 0}, 'starttime': '2025-03-19T13:45:53.664891', 'endtime': '2025-03-19T13:50:03.494368', 'cameraid': 2})
+2025-03-19 13:50:54,341 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:52:31,837 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:53:14,565 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:54:08,466 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:54:08,466 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 6}, 'starttime': '2025-03-19T13:50:04.503550', 'endtime': '2025-03-19T13:54:07.453178', 'cameraid': 2})
+2025-03-19 13:56:45,684 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:57:51,279 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 13:57:51,279 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 4}, 'starttime': '2025-03-19T13:54:08.466054', 'endtime': '2025-03-19T13:57:50.269976', 'cameraid': 2})
+2025-03-19 13:57:59,483 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:58:43,520 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 13:59:30,770 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:00:19,405 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:01:49,216 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:02:20,784 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:02:20,784 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 2}, 'starttime': '2025-03-19T13:57:51.279379', 'endtime': '2025-03-19T14:02:19.778115', 'cameraid': 2})
+2025-03-19 14:02:34,103 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:04:12,245 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:05:55,026 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:05:55,026 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 4}, 'starttime': '2025-03-19T14:02:20.784506', 'endtime': '2025-03-19T14:05:54.016112', 'cameraid': 2})
+2025-03-19 14:06:57,605 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:08:24,884 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:09:03,342 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:09:28,520 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:09:28,520 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 4}, 'starttime': '2025-03-19T14:05:55.026094', 'endtime': '2025-03-19T14:09:27.506515', 'cameraid': 2})
+2025-03-19 14:10:39,550 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:12:23,918 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:13:19,016 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:13:19,016 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 2}, 'starttime': '2025-03-19T14:09:28.520341', 'endtime': '2025-03-19T14:13:18.005045', 'cameraid': 2})
+2025-03-19 14:13:35,123 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:14:25,250 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:16:43,051 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:16:57,481 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:16:57,481 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 2}, 'starttime': '2025-03-19T14:13:19.016320', 'endtime': '2025-03-19T14:16:56.469946', 'cameraid': 2})
+2025-03-19 14:17:21,546 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:18:53,912 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:20:34,814 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:20:34,815 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 0}, 'starttime': '2025-03-19T14:16:57.481145', 'endtime': '2025-03-19T14:20:33.801954', 'cameraid': 2})
+2025-03-19 14:21:38,908 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:22:20,879 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:23:00,630 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:23:50,151 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:24:40,668 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:24:58,816 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:24:58,816 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 2}, 'starttime': '2025-03-19T14:20:34.815785', 'endtime': '2025-03-19T14:24:57.807556', 'cameraid': 2})
+2025-03-19 14:25:23,421 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:26:16,121 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:27:04,252 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:29:06,941 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:29:06,942 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 2}, 'starttime': '2025-03-19T14:24:58.816676', 'endtime': '2025-03-19T14:29:05.933802', 'cameraid': 2})
+2025-03-19 14:29:10,498 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:30:44,243 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:32:03,988 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:33:09,204 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:33:09,204 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 2}, 'starttime': '2025-03-19T14:29:06.942625', 'endtime': '2025-03-19T14:33:08.193920', 'cameraid': 2})
+2025-03-19 14:33:35,862 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:35:06,934 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:36:37,535 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:37:05,869 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:37:05,869 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 0}, 'starttime': '2025-03-19T14:33:09.204269', 'endtime': '2025-03-19T14:37:04.856751', 'cameraid': 2})
+2025-03-19 14:38:20,320 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:39:04,767 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:41:05,614 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:41:05,614 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 0}, 'starttime': '2025-03-19T14:37:05.869995', 'endtime': '2025-03-19T14:41:04.606933', 'cameraid': 2})
+2025-03-19 14:41:31,675 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:42:20,320 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:44:28,594 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:45:15,171 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:45:15,171 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 2}, 'starttime': '2025-03-19T14:41:05.614261', 'endtime': '2025-03-19T14:45:14.162212', 'cameraid': 2})
+2025-03-19 14:46:24,734 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:48:06,087 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:48:47,454 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:48:47,454 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 1}, 'starttime': '2025-03-19T14:45:15.172446', 'endtime': '2025-03-19T14:48:46.446419', 'cameraid': 2})
+2025-03-19 14:49:36,826 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:50:51,547 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:51:35,618 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:52:46,274 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:53:05,887 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:53:05,887 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 2}, 'starttime': '2025-03-19T14:48:47.454740', 'endtime': '2025-03-19T14:53:04.880813', 'cameraid': 2})
+2025-03-19 14:54:03,368 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:54:31,885 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:56:00,161 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:56:35,099 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 14:56:35,099 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 3}, 'starttime': '2025-03-19T14:53:05.887553', 'endtime': '2025-03-19T14:56:34.088794', 'cameraid': 2})
+2025-03-19 14:56:45,288 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 14:59:08,580 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:00:33,594 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 15:00:33,594 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 2, 'OUT': 0}, 'starttime': '2025-03-19T14:56:35.099455', 'endtime': '2025-03-19T15:00:32.587445', 'cameraid': 2})
+2025-03-19 15:01:36,678 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:02:56,513 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:03:41,216 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:04:43,142 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 15:04:43,142 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 0}, 'starttime': '2025-03-19T15:00:33.594296', 'endtime': '2025-03-19T15:04:42.135802', 'cameraid': 2})
+2025-03-19 15:05:12,463 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:07:40,133 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:08:25,605 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:08:50,722 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 15:08:50,722 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 0, 'OUT': 0}, 'starttime': '2025-03-19T15:04:43.142525', 'endtime': '2025-03-19T15:08:49.714640', 'cameraid': 2})
+2025-03-19 15:09:11,161 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:11:53,376 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:12:36,650 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:13:10,565 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 15:13:10,565 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 2, 'OUT': 0}, 'starttime': '2025-03-19T15:08:50.722235', 'endtime': '2025-03-19T15:13:09.558813', 'cameraid': 2})
+2025-03-19 15:14:16,586 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:16:13,673 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:17:19,450 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 15:17:19,450 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 3}, 'starttime': '2025-03-19T15:13:10.565669', 'endtime': '2025-03-19T15:17:18.442850', 'cameraid': 2})
+2025-03-19 15:17:35,766 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:18:19,865 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:19:34,737 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:20:19,861 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:21:11,412 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:22:06,209 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Successfully sent to server
+2025-03-19 15:22:06,209 - Cam66 - MainThread - enqueue_frame_buffer - INFO - ('Classiwise Counts sent - ', {'brakeDrum3711': {'IN': 1, 'OUT': 1}, 'starttime': '2025-03-19T15:17:19.450836', 'endtime': '2025-03-19T15:22:05.200704', 'cameraid': 2})
+2025-03-19 15:22:45,422 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:23:28,249 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT
+2025-03-19 15:24:12,795 - Cam66 - MainThread - enqueue_frame_buffer - INFO - Some Issue with reading from STDOUT

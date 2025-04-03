@@ -1,0 +1,229 @@
+{% include "header.html" %}
+<body>
+{% include "navbar.html" %}
+{% include "sidebar.html" %}
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Dashboard</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-10">
+          <div class="row">
+
+            <!-- Sales Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card sales-card">
+
+                <div class="card-body">
+                  <h5 class="card-title">Product <span>| Total</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-box-fill"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6 id="productTotal">Loading...</h6>
+                      <span class="text-success small pt-1 fw-bold">Total</span> 
+                      <span class="text-muted small pt-2 ps-1">Number</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Sales Card -->
+
+            <!-- Revenue Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card revenue-card">
+
+                <div class="card-body">
+                  <h5 class="card-title">Camera <span>| Total </span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-camera-video"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6 id="cameraTotal">Loading...</h6>
+                      <span class="text-success small pt-1 fw-bold">Total</span> 
+                      <span class="text-muted small pt-2 ps-1">Number</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Revenue Card -->
+
+            <!-- Customers Card -->
+            <div class="col-xxl-4 col-xl-12">
+
+              <div class="card info-card customers-card">
+
+                <div class="card-body">
+                  <h5 class="card-title">Services <span>| Active</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-gear"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6 id="activecameraTotal">Loading...</h6>
+                      
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div><!-- End Customers Card -->
+
+
+            <!-- Top Selling -->
+            <div class="col-12">
+              <div class="card top-selling overflow-auto">
+
+                <div class="card-body pb-0">
+                  <h5 class="card-title">Top Production <span>| last 24 hrs</span></h5>
+
+                  <table class="table table-borderless" id="topSellingTable">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Production Count</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+          
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+            </div><!-- End Top Selling -->
+
+          </div>
+        </div><!-- End Left side columns -->
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  {% include "footer.html" %}
+  
+  <script>
+    // Fetch product total count when the page loads
+    const getproducts = () => {
+      const apiUrl = "/ai/getproductscount"; // API endpoint
+      const productTotalElement = document.getElementById("productTotal");
+
+      fetch(apiUrl)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Update the Product Total with the value from API
+          productTotalElement.textContent = data.total_count;
+        })
+        .catch(error => {
+          console.error("Error fetching product total:", error);
+          productTotalElement.textContent = "Error";
+        });
+    }
+    const getcameras = () => {
+      const apiUrl = "/ai/getacamerascount"; // API endpoint
+      const productTotalElement = document.getElementById("cameraTotal");
+
+      fetch(apiUrl)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Update the Product Total with the value from API
+          console.log("In camrea");
+          console.log(data);
+          productTotalElement.textContent = data.total_count;
+        })
+        .catch(error => {
+          console.error("Error fetching product total:", error);
+          productTotalElement.textContent = "Error";
+        });
+    }
+
+    const getactivecameras = () => {
+      const apiUrl = "/ai/getactivecamerascount"; // API endpoint
+      const productTotalElement = document.getElementById("activecameraTotal");
+
+      fetch(apiUrl)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Update the Product Total with the value from API
+          console.log("In camrea");
+          console.log(data);
+          productTotalElement.textContent = data.total_count;
+        })
+        .catch(error => {
+          console.error("Error fetching product total:", error);
+          productTotalElement.textContent = "Error";
+        });
+    }
+    const topproduction = () => {
+      const tableBody = document.querySelector("#topSellingTable tbody");
+  
+      // Fetch the top-selling products from Django endpoint
+      fetch("/ai/gettopproduction")
+          .then(response => response.json())
+          .then(data => {
+              const products = data.product_productions;
+              products.forEach(product => {
+                  const row = `
+                      <tr>
+                          <td><a href="#" class="text-primary fw-bold">${product.productid__name}</a></td>
+                          <td>${product.total_count}</td>
+                      </tr>
+                  `;
+                  console.log("adding to table")
+                  console.log(product)
+                  tableBody.innerHTML += row;
+              });
+          })
+          .catch(error => {
+              console.error("Error fetching data:", error);
+          });
+  }
+    document.addEventListener("DOMContentLoaded", ()=>{
+      getproducts();
+      getcameras();
+      getactivecameras();
+      topproduction();
+    });
+  </script>
+</body>
+
+</html>

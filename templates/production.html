@@ -1,0 +1,287 @@
+{% include "header.html" %}
+<body>
+{% include "navbar.html" %}
+{% include "sidebar.html" %}
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Production</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item">Production</li>
+          <li class="breadcrumb-item active">Data</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Production List</h5>
+              <form id="timeFilterForm">
+                <div class="row mb-3">
+                  <label for="startDate" class="col-sm-2 col-form-label">Start Date</label>
+                  <div class="col-sm-10">
+                    <input type="date" class="form-control" id="startDate" required>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="startTime" class="col-sm-2 col-form-label">Start Time</label>
+                  <div class="col-sm-10">
+                    <input type="time" class="form-control" id="startTime" required>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="endDate" class="col-sm-2 col-form-label">End Date</label>
+                  <div class="col-sm-10">
+                    <input type="date" class="form-control" id="endDate" required>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="endTime" class="col-sm-2 col-form-label">End Time</label>
+                  <div class="col-sm-10">
+                    <input type="time" class="form-control" id="endTime" required>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label" for="productSelect">Select Product</label>
+                  <div class="col-sm-10">
+                    <select class="form-select" id="productSelect" aria-label="Select Product">
+                      <option value="" disabled selected>Select a product</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label" for="cameraSelect">Select Camera</label>
+                  <div class="col-sm-10">
+                    <select class="form-select" id="cameraSelect" aria-label="Select Camera">
+                      <option value="" disabled selected>Select a Camera</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Filter</button>
+              </form>
+              <button id="downloadCsvBtn" class="btn btn-primary">Download CSV</button>
+
+
+              <!-- Table with stripped rows -->
+              <table class="table datatable" id="productionsTable">
+                <thead>
+                  <tr>
+                    <th>Camera ID</th>
+                    <th>Product Name</th>
+                    <th>Total Count</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Rows will be dynamically populated -->
+                </tbody>
+              </table>
+              <!-- End Table with stripped rows -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+  {% include "footer.html" %}
+
+<!-- Custom JS -->
+<script>
+    document.addEventListener("DOMContentLoaded", ()=>{
+      filtersubmit();
+      getallproducts();
+      getallcamera();
+    });
+
+    const getallcamera = () => {
+      const productSelect = document.getElementById("cameraSelect");
+      const allOption = document.createElement("option");
+      allOption.value = -1; // Set the value of "All" option
+      allOption.textContent = "All"; // Display text
+      productSelect.appendChild(allOption);
+      // Fetch all products from the API
+      fetch("/ai/getallcameras", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          const products = data;
+
+          // Populate the dropdown with products
+          products.forEach((product) => {
+            const option = document.createElement("option");
+            option.value = product.id; // Use product ID as the value
+            option.textContent = product.name; // Display product name
+            productSelect.appendChild(option);
+          });
+        })
+        .catch((error) => {
+          console.error("Error fetching products:", error);
+        });
+    }
+
+
+    const getallproducts = () => {
+      const productSelect = document.getElementById("productSelect");
+      const allOption = document.createElement("option");
+      allOption.value = -1; // Set the value of "All" option
+      allOption.textContent = "All"; // Display text
+      productSelect.appendChild(allOption);
+      // Fetch all products from the API
+      fetch("/ai/getallproduct", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          const products = data.products;
+
+          // Populate the dropdown with products
+          products.forEach((product) => {
+            const option = document.createElement("option");
+            option.value = product.id; // Use product ID as the value
+            option.textContent = product.name; // Display product name
+            productSelect.appendChild(option);
+          });
+        })
+        .catch((error) => {
+          console.error("Error fetching products:", error);
+        });
+    }
+    const filtersubmit = () => {
+      const form = document.getElementById("timeFilterForm");
+      const tableBody = document.querySelector("#productionsTable tbody");
+  
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+  
+        // Get form values
+        const startDate = document.getElementById("startDate").value;
+        const startTime = document.getElementById("startTime").value;
+        const endDate = document.getElementById("endDate").value;
+        const endTime = document.getElementById("endTime").value;
+        const productName = document.getElementById("productSelect").value;
+        const cameraSelect = document.getElementById("cameraSelect").value;
+        
+        console.log(productName)
+        // Construct the starttime and endtime in the required format
+        const startDatetime = `${startDate}T${startTime}:00.000`;
+        const endDatetime = `${endDate}T${endTime}:59.999`;
+  
+        // Prepare the request payload
+        const requestData = {
+          starttime: startDatetime,
+          endtime: endDatetime,
+          cameraid: Number(cameraSelect),
+          productid: Number(productName)
+        };
+        console.log(requestData)
+        // Replace with your Django endpoint URL
+        const endpoint = "/ai/getproductionbyfilter";
+  
+        // Send the POST request
+        fetch(endpoint, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(requestData),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            // Clear previous table rows
+            tableBody.innerHTML = "";
+  
+            // Populate the table with the response data
+            const productions = data.product_productions;
+            productions.forEach((production) => {
+              const row = `
+                <tr>
+                  <td>${production.cameraid}</td>
+                  {% comment %} <td>${production.productid}</td> {% endcomment %}
+                  <td>${production.productid__name}</td>
+                  <td>${production.total_count}</td>
+                </tr>
+              `;
+              tableBody.innerHTML += row;
+            });
+          })
+          .catch((error) => {
+            console.error("Error fetching data:", error);
+          });
+      });
+    }
+
+    document.getElementById("downloadCsvBtn").addEventListener("click", function () {
+        // Get form values
+        const startDate = document.getElementById("startDate").value;
+        const startTime = document.getElementById("startTime").value;
+        const endDate = document.getElementById("endDate").value;
+        const endTime = document.getElementById("endTime").value;
+  
+        // Construct the starttime and endtime in the required format
+        const startDatetime = `${startDate}T${startTime}:00.000`;
+        const endDatetime = `${endDate}T${endTime}:59.999`;
+  
+        if (!startDate || !startTime || !endTime || !endDate ) {
+            alert("Please select both start and end date/time.");
+            return;
+        }
+        // Prepare the request payload
+        const payload = {
+          starttime: startDatetime,
+          endtime: endDatetime,
+        };
+
+        fetch("{% url 'download_csv' %}", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload),
+        })
+            .then(response => {
+                if (response.ok) {
+                    return response.blob();
+                } else {
+                    throw new Error("Failed to generate CSV.");
+                }
+            })
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = "product_productions.csv";
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            })
+            .catch(error => {
+                console.error(error);
+                alert("An error occurred while downloading the CSV.");
+            });
+    });
+
+  </script>
+  
+
+</body>
+
+</html>
