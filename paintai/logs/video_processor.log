@@ -173,3 +173,35 @@
 2025-05-13 21:08:17,366 - INFO - Saved processed data to: D:/Camduc-Sudisa/paintai/processed_logs\20250513_190001.mp4.json
 2025-05-14 09:44:59,316 - INFO - Starting video processing loop...
 2025-05-14 09:44:59,317 - INFO - Processing video: D:/Camduc-Sudisa/paintai/videos\20250513_200002.mp4
+2025-05-14 10:33:39,673 - INFO - Successfully sent data for video: D:/Camduc-Sudisa/paintai/videos\20250513_200002.mp4
+2025-05-14 10:33:39,674 - INFO - Classwise Counts: {'starttime': '2025-05-14T09:44:59.488225', 'endtime': '2025-05-14T10:33:37.495059', 'cameraid': 2}
+2025-05-14 10:33:39,683 - INFO - Saved processed data to: D:/Camduc-Sudisa/paintai/processed_logs\20250513_200002.mp4.json
+2025-05-14 10:33:41,683 - INFO - Processing video: D:/Camduc-Sudisa/paintai/videos\20250513_210002.mp4
+2025-05-14 11:19:56,291 - INFO - Successfully sent data for video: D:/Camduc-Sudisa/paintai/videos\20250513_210002.mp4
+2025-05-14 11:19:56,291 - INFO - Classwise Counts: {'starttime': '2025-05-14T10:33:41.698141', 'endtime': '2025-05-14T11:19:54.084825', 'cameraid': 2}
+2025-05-14 11:19:56,301 - INFO - Saved processed data to: D:/Camduc-Sudisa/paintai/processed_logs\20250513_210002.mp4.json
+2025-05-14 11:19:58,303 - INFO - Processing video: D:/Camduc-Sudisa/paintai/videos\20250513_220007.mp4
+2025-05-14 12:08:11,064 - INFO - Successfully sent data for video: D:/Camduc-Sudisa/paintai/videos\20250513_220007.mp4
+2025-05-14 12:08:11,064 - INFO - Classwise Counts: {'starttime': '2025-05-14T11:19:58.321732', 'endtime': '2025-05-14T12:08:09.013088', 'cameraid': 2}
+2025-05-14 12:08:11,074 - INFO - Saved processed data to: D:/Camduc-Sudisa/paintai/processed_logs\20250513_220007.mp4.json
+2025-05-14 12:08:13,075 - INFO - Processing video: D:/Camduc-Sudisa/paintai/videos\20250513_230007.mp4
+2025-05-14 12:56:36,774 - INFO - Successfully sent data for video: D:/Camduc-Sudisa/paintai/videos\20250513_230007.mp4
+2025-05-14 12:56:36,774 - INFO - Classwise Counts: {'brakeDrum3711': {'IN': 0, 'OUT': 0}, 'starttime': '2025-05-14T12:08:13.088821', 'endtime': '2025-05-14T12:56:33.719014', 'cameraid': 2}
+2025-05-14 12:56:36,790 - INFO - Saved processed data to: D:/Camduc-Sudisa/paintai/processed_logs\20250513_230007.mp4.json
+2025-05-14 12:56:38,791 - INFO - Processing video: D:/Camduc-Sudisa/paintai/videos\20250514_000008.mp4
+2025-05-14 13:45:29,129 - INFO - Successfully sent data for video: D:/Camduc-Sudisa/paintai/videos\20250514_000008.mp4
+2025-05-14 13:45:29,129 - INFO - Classwise Counts: {'brakeDrum3711': {'IN': 0, 'OUT': 9}, 'diffCover': {'IN': 0, 'OUT': 0}, 'starttime': '2025-05-14T12:56:38.806740', 'endtime': '2025-05-14T13:45:25.072198', 'cameraid': 2}
+2025-05-14 13:45:29,142 - INFO - Saved processed data to: D:/Camduc-Sudisa/paintai/processed_logs\20250514_000008.mp4.json
+2025-05-14 13:45:31,142 - INFO - Processing video: D:/Camduc-Sudisa/paintai/videos\20250514_010008.mp4
+2025-05-14 14:38:48,642 - INFO - Successfully sent data for video: D:/Camduc-Sudisa/paintai/videos\20250514_010008.mp4
+2025-05-14 14:38:48,642 - INFO - Classwise Counts: {'brakeDrum3711': {'IN': 0, 'OUT': 84}, 'springTrunion': {'IN': 0, 'OUT': 10}, 'sdHub': {'IN': 0, 'OUT': 0}, 'starttime': '2025-05-14T13:45:31.160636', 'endtime': '2025-05-14T14:38:43.584415', 'cameraid': 2}
+2025-05-14 14:38:48,649 - INFO - Saved processed data to: D:/Camduc-Sudisa/paintai/processed_logs\20250514_010008.mp4.json
+2025-05-14 14:38:50,650 - INFO - Processing video: D:/Camduc-Sudisa/paintai/videos\20250514_020008.mp4
+2025-05-14 15:27:06,532 - INFO - Successfully sent data for video: D:/Camduc-Sudisa/paintai/videos\20250514_020008.mp4
+2025-05-14 15:27:06,532 - INFO - Classwise Counts: {'springTrunion': {'IN': 0, 'OUT': 2}, 'starttime': '2025-05-14T14:38:50.668143', 'endtime': '2025-05-14T15:27:03.484962', 'cameraid': 2}
+2025-05-14 15:27:06,545 - INFO - Saved processed data to: D:/Camduc-Sudisa/paintai/processed_logs\20250514_020008.mp4.json
+2025-05-14 15:27:08,546 - INFO - Processing video: D:/Camduc-Sudisa/paintai/videos\20250514_030008.mp4
+2025-05-14 16:10:01,753 - INFO - Successfully sent data for video: D:/Camduc-Sudisa/paintai/videos\20250514_030008.mp4
+2025-05-14 16:10:01,754 - INFO - Classwise Counts: {'starttime': '2025-05-14T15:27:08.575012', 'endtime': '2025-05-14T16:09:59.691813', 'cameraid': 2}
+2025-05-14 16:10:01,767 - INFO - Saved processed data to: D:/Camduc-Sudisa/paintai/processed_logs\20250514_030008.mp4.json
+2025-05-14 16:10:03,769 - INFO - Processing video: D:/Camduc-Sudisa/paintai/videos\20250514_040009.mp4
