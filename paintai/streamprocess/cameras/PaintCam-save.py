@@ -35,10 +35,6 @@ class VideoSaver:
 
     def save_video_stream(self):
         """Captures the RTSP stream and saves it as aligned hourly videos with a 59-second start grace period."""
-        
-        self.logger.info("Entered save_video_stream loop")
-        print("Inside save_video_stream loop")
-
         while True:
             try:
                 now = datetime.now()
@@ -91,14 +87,27 @@ class VideoSaver:
             except Exception as e:
                 self.logger.error(f"Error during video recording: {e}")
 
+    # def start(self):
+    #     """Start video saving in a separate thread."""
+    #     thread = threading.Thread(target=self.save_video_stream, daemon=True)
+    #     thread.start()
+    #     thread.join()
+
     def start(self):
         """Start video saving in a separate thread."""
-        print("Starting the recording thread...")
         thread = threading.Thread(target=self.save_video_stream, daemon=True)
         thread.start()
-        thread.join()
+
+        # Keep the main thread alive manually to catch Ctrl+C
+        try:
+            while True:
+                time.sleep(1)
+        except KeyboardInterrupt:
+            print("Shutting Down")
+            self.logger.info("KeyboardInterrupt received. Stopping PaintCam-save.py Process.")
+
 
 if __name__ == "__main__":
-    print("PaintCam-save.py script started")
+    print("PaintCam-save.py Process Started. Press Ctrl+C to Stop.")
     video_saver = VideoSaver()
     video_saver.start()

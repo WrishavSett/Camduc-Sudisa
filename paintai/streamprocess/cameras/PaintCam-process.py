@@ -41,53 +41,58 @@ class VideoProcessor:
 
     def scan_and_process(self):
         """Continuously scans for new videos and processes them."""
-        while True:
-            video_files = [f for f in os.listdir(self.config["videodir"]) if f.endswith(".mp4")]
+        try:
+            while True:
+                video_files = [f for f in os.listdir(self.config["videodir"]) if f.endswith(".mp4")]
 
-            for video_file in sorted(video_files):  # Sort for chronological processing
-                video_path = os.path.join(self.config["videodir"], video_file)
-                processed_file_path = os.path.join(self.config["processed_logdir"], f"{video_file}.json")
+                for video_file in sorted(video_files):  # Sort for chronological processing
+                    video_path = os.path.join(self.config["videodir"], video_file)
+                    processed_file_path = os.path.join(self.config["processed_logdir"], f"{video_file}.json")
 
-                # Skip already processed videos
-                if os.path.exists(processed_file_path):
-                    print(f"[SKIP] Already processed: {video_file}")
-                    continue
+                    # Skip already processed videos
+                    if os.path.exists(processed_file_path):
+                        print(f"[SKIP] Already processed: {video_file}")
+                        continue
 
-                # Extract start time from filename
-                try:
-                    basename = os.path.splitext(video_file)[0]
-                    start_time = datetime.strptime(basename, "%Y%m%d_%H%M%S")
-                    print(f"[INFO] Checking video: {video_file}, Start Time Parsed: {start_time}")
-                except ValueError:
-                    self.logger.warning(f"Filename format incorrect, skipping: {video_file}")
-                    continue
+                    # Extract start time from filename
+                    try:
+                        basename = os.path.splitext(video_file)[0]
+                        start_time = datetime.strptime(basename, "%Y%m%d_%H%M%S")
+                        print(f"[INFO] Checking video: {video_file}, Start Time Parsed: {start_time}")
+                    except ValueError:
+                        self.logger.warning(f"Filename format incorrect, skipping: {video_file}")
+                        continue
 
-                # Skip videos for current or incomplete hour
-                now = datetime.now()
-                hour_end_time = start_time + timedelta(hours=1, seconds=60)  # Add 60s buffer
+                    # Skip videos for current or incomplete hour
+                    now = datetime.now()
+                    hour_end_time = start_time + timedelta(hours=1, seconds=60)  # Add 60s buffer
 
-                if now < hour_end_time:
-                    self.logger.info(f"Skipping {video_file} — still within the hour + 60s buffer.")
-                    print("[WAIT] " + f"Skipping {video_file} — still within the hour + 60s buffer.")
-                    continue
+                    if now < hour_end_time:
+                        self.logger.info(f"Skipping {video_file} — still within the hour + 60s buffer.")
+                        print("[WAIT] " + f"Skipping {video_file} — still within the hour + 60s buffer.")
+                        continue
 
-                # # Skip very recent files to ensure .mp4 is fully closed
-                # if (time.time() - os.path.getmtime(video_path)) < 10:
-                #     self.logger.info(f"Skipping {video_file} — file too recent.")
-                #     continue
+                    # # Skip very recent files to ensure .mp4 is fully closed
+                    # if (time.time() - os.path.getmtime(video_path)) < 10:
+                    #     self.logger.info(f"Skipping {video_file} — file too recent.")
+                    #     continue
 
-                # Process the video
-                print(f"[PROCESS] Starting processing for: {video_file}")
-                self.logger.info(f"Processing video: {video_path}")
-                counts = self.process_video(video_path)
+                    # Process the video
+                    print(f"[PROCESS] Starting processing for: {video_file}")
+                    self.logger.info(f"Processing video: {video_path}")
+                    counts = self.process_video(video_path)
 
-                if counts:
-                    with open(processed_file_path, "w") as f:
-                        json.dump(counts, f, indent=4)
-                    print(f"[SUCCESS] Saved processed data: {processed_file_path}")
-                    self.logger.info(f"Saved processed data to: {processed_file_path}")
+                    if counts:
+                        with open(processed_file_path, "w") as f:
+                            json.dump(counts, f, indent=4)
+                        print(f"[SUCCESS] Saved processed data: {processed_file_path}")
+                        self.logger.info(f"Saved processed data to: {processed_file_path}")
 
-                time.sleep(2)
+                    time.sleep(2)
+
+        except KeyboardInterrupt:
+            print("\n[EXIT] Ctrl+C pressed. Exiting gracefully...")
+            self.logger.info("KeyboardInterrupt received. Exiting processing loop.")
 
     def process_video(self, video_path):
         """Processes a single video file and counts objects."""
@@ -134,9 +139,9 @@ class VideoProcessor:
 
     def start(self):
         """Starts scanning for videos to process."""
-        self.logger.info("Starting video processing loop...")
         self.scan_and_process()
 
 if __name__ == "__main__":
+    print("PaintCam-process.py Process Started. Press Ctrl+C to Stop.")
     video_processor = VideoProcessor()
     video_processor.start()
