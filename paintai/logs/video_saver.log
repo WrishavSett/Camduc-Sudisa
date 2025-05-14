@@ -1,0 +1,85 @@
+2025-05-12 16:00:01,021 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250512_160001.mp4
+2025-05-12 17:00:04,345 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250512_160001.mp4
+2025-05-12 17:00:04,345 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250512_170004.mp4
+2025-05-12 18:00:04,599 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250512_170004.mp4
+2025-05-12 18:00:04,600 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250512_180004.mp4
+2025-05-12 19:00:04,848 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250512_180004.mp4
+2025-05-12 19:00:04,848 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250512_190004.mp4
+2025-05-12 20:00:05,107 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250512_190004.mp4
+2025-05-12 20:00:05,108 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250512_200005.mp4
+2025-05-12 21:00:05,366 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250512_200005.mp4
+2025-05-12 21:00:05,367 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250512_210005.mp4
+2025-05-12 22:00:05,651 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250512_210005.mp4
+2025-05-12 22:00:05,651 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250512_220005.mp4
+2025-05-12 23:00:05,877 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250512_220005.mp4
+2025-05-12 23:00:05,877 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250512_230005.mp4
+2025-05-13 00:00:06,138 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250512_230005.mp4
+2025-05-13 00:00:06,138 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_000006.mp4
+2025-05-13 00:05:09,714 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_000006.mp4
+2025-05-13 00:05:09,714 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_000509.mp4
+2025-05-13 01:05:09,981 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_000509.mp4
+2025-05-13 01:05:09,981 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_010509.mp4
+2025-05-13 02:05:10,237 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_010509.mp4
+2025-05-13 02:05:10,238 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_020510.mp4
+2025-05-13 03:05:10,493 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_020510.mp4
+2025-05-13 03:05:10,494 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_030510.mp4
+2025-05-13 04:05:10,746 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_030510.mp4
+2025-05-13 04:05:10,746 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_040510.mp4
+2025-05-13 05:05:11,008 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_040510.mp4
+2025-05-13 05:05:11,008 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_050511.mp4
+2025-05-13 06:05:11,254 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_050511.mp4
+2025-05-13 06:05:11,255 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_060511.mp4
+2025-05-13 07:05:11,524 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_060511.mp4
+2025-05-13 07:05:11,525 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_070511.mp4
+2025-05-13 08:05:14,628 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_070511.mp4
+2025-05-13 08:05:14,628 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_080514.mp4
+2025-05-13 09:05:14,881 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_080514.mp4
+2025-05-13 09:05:14,882 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_090514.mp4
+2025-05-13 09:59:56,674 - ERROR - Error saving video: ffmpeg error (see stderr output for detail)
+2025-05-13 09:59:56,675 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_095956.mp4
+2025-05-13 10:59:56,925 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_095956.mp4
+2025-05-13 10:59:56,925 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_105956.mp4
+2025-05-13 11:59:57,188 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_105956.mp4
+2025-05-13 11:59:57,188 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_115957.mp4
+2025-05-13 13:00:00,340 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_115957.mp4
+2025-05-13 13:00:00,340 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_130000.mp4
+2025-05-13 14:00:00,641 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_130000.mp4
+2025-05-13 14:00:00,642 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_140000.mp4
+2025-05-13 15:00:00,893 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_140000.mp4
+2025-05-13 15:00:00,893 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_150000.mp4
+2025-05-13 16:00:01,155 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_150000.mp4
+2025-05-13 16:00:01,155 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_160001.mp4
+2025-05-13 17:00:01,414 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_160001.mp4
+2025-05-13 17:00:01,415 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_170001.mp4
+2025-05-13 18:00:01,664 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_170001.mp4
+2025-05-13 18:00:01,664 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_180001.mp4
+2025-05-13 19:00:01,878 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_180001.mp4
+2025-05-13 19:00:01,878 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_190001.mp4
+2025-05-13 20:00:02,118 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_190001.mp4
+2025-05-13 20:00:02,118 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_200002.mp4
+2025-05-13 21:00:02,387 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_200002.mp4
+2025-05-13 21:00:02,388 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_210002.mp4
+2025-05-13 22:00:07,756 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_210002.mp4
+2025-05-13 22:00:07,756 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_220007.mp4
+2025-05-13 23:00:07,966 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_220007.mp4
+2025-05-13 23:00:07,966 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250513_230007.mp4
+2025-05-14 00:00:08,190 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250513_230007.mp4
+2025-05-14 00:00:08,190 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250514_000008.mp4
+2025-05-14 01:00:08,398 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250514_000008.mp4
+2025-05-14 01:00:08,398 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250514_010008.mp4
+2025-05-14 02:00:08,629 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250514_010008.mp4
+2025-05-14 02:00:08,630 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250514_020008.mp4
+2025-05-14 03:00:08,876 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250514_020008.mp4
+2025-05-14 03:00:08,876 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250514_030008.mp4
+2025-05-14 04:00:09,097 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250514_030008.mp4
+2025-05-14 04:00:09,097 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250514_040009.mp4
+2025-05-14 05:00:09,308 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250514_040009.mp4
+2025-05-14 05:00:09,308 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250514_050009.mp4
+2025-05-14 06:00:11,823 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250514_050009.mp4
+2025-05-14 06:00:11,823 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250514_060011.mp4
+2025-05-14 07:00:12,086 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250514_060011.mp4
+2025-05-14 07:00:12,086 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250514_070012.mp4
+2025-05-14 08:00:12,291 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250514_070012.mp4
+2025-05-14 08:00:12,291 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250514_080012.mp4
+2025-05-14 09:00:14,656 - INFO - Video saved: D:/Camduc-Sudisa/paintai/videos\20250514_080012.mp4
+2025-05-14 09:00:14,656 - INFO - Starting new video recording: D:/Camduc-Sudisa/paintai/videos\20250514_090014.mp4

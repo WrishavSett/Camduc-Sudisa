@@ -1,0 +1,21 @@
+{
+    "sdHub": {
+        "IN": 8,
+        "OUT": 19
+    },
+    "brakeDrum3711": {
+        "IN": 0,
+        "OUT": 52
+    },
+    "springTrunion": {
+        "IN": 4,
+        "OUT": 9
+    },
+    "diffCover": {
+        "IN": 1,
+        "OUT": 5
+    },
+    "starttime": "2025-05-09T00:01:21.100079",
+    "endtime": "2025-05-09T00:53:35.794187",
+    "cameraid": 2
+}
