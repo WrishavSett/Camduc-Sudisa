@@ -1,0 +1,17 @@
+{
+    "diffCover": {
+        "IN": 0,
+        "OUT": 0
+    },
+    "sdHub": {
+        "IN": 0,
+        "OUT": 0
+    },
+    "brakeDrum3711": {
+        "IN": 0,
+        "OUT": 2
+    },
+    "starttime": "2025-05-14T18:36:20.649405",
+    "endtime": "2025-05-14T19:22:32.371650",
+    "cameraid": 2
+}

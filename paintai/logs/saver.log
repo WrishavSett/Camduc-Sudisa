@@ -1,2 +1,53 @@
 2025-05-14 16:56:00,699 - INFO - Too late for current hour. Waiting 239.30s until next hour: 2025-05-14 17:00:00
 2025-05-14 17:00:00,000 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250514_170000.mp4 for 3600.00 seconds
+2025-05-14 18:00:00,269 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250514_170000.mp4
+2025-05-14 18:00:00,270 - INFO - Within grace period (0.27s). Recording for current hour starting at 2025-05-14 18:00:00
+2025-05-14 18:00:00,270 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250514_180000.mp4 for 3599.73 seconds
+2025-05-14 19:00:00,346 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250514_180000.mp4
+2025-05-14 19:00:00,346 - INFO - Within grace period (0.35s). Recording for current hour starting at 2025-05-14 19:00:00
+2025-05-14 19:00:00,347 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250514_190000.mp4 for 3599.65 seconds
+2025-05-14 20:00:00,296 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250514_190000.mp4
+2025-05-14 20:00:00,296 - INFO - Within grace period (0.30s). Recording for current hour starting at 2025-05-14 20:00:00
+2025-05-14 20:00:00,296 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250514_200000.mp4 for 3599.70 seconds
+2025-05-14 21:00:00,405 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250514_200000.mp4
+2025-05-14 21:00:00,406 - INFO - Within grace period (0.41s). Recording for current hour starting at 2025-05-14 21:00:00
+2025-05-14 21:00:00,406 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250514_210000.mp4 for 3599.59 seconds
+2025-05-14 22:00:00,255 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250514_210000.mp4
+2025-05-14 22:00:00,255 - INFO - Within grace period (0.26s). Recording for current hour starting at 2025-05-14 22:00:00
+2025-05-14 22:00:00,255 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250514_220000.mp4 for 3599.74 seconds
+2025-05-14 23:00:00,313 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250514_220000.mp4
+2025-05-14 23:00:00,313 - INFO - Within grace period (0.31s). Recording for current hour starting at 2025-05-14 23:00:00
+2025-05-14 23:00:00,313 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250514_230000.mp4 for 3599.69 seconds
+2025-05-15 00:00:00,271 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250514_230000.mp4
+2025-05-15 00:00:00,271 - INFO - Within grace period (0.27s). Recording for current hour starting at 2025-05-15 00:00:00
+2025-05-15 00:00:00,271 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250515_000000.mp4 for 3599.73 seconds
+2025-05-15 01:00:00,325 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250515_000000.mp4
+2025-05-15 01:00:00,326 - INFO - Within grace period (0.33s). Recording for current hour starting at 2025-05-15 01:00:00
+2025-05-15 01:00:00,326 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250515_010000.mp4 for 3599.67 seconds
+2025-05-15 02:00:01,586 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250515_010000.mp4
+2025-05-15 02:00:01,587 - INFO - Within grace period (1.59s). Recording for current hour starting at 2025-05-15 02:00:00
+2025-05-15 02:00:01,587 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250515_020000.mp4 for 3598.41 seconds
+2025-05-15 03:00:00,352 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250515_020000.mp4
+2025-05-15 03:00:00,352 - INFO - Within grace period (0.35s). Recording for current hour starting at 2025-05-15 03:00:00
+2025-05-15 03:00:00,352 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250515_030000.mp4 for 3599.65 seconds
+2025-05-15 04:00:03,924 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250515_030000.mp4
+2025-05-15 04:00:03,924 - INFO - Within grace period (3.92s). Recording for current hour starting at 2025-05-15 04:00:00
+2025-05-15 04:00:03,925 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250515_040000.mp4 for 3596.07 seconds
+2025-05-15 05:00:00,844 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250515_040000.mp4
+2025-05-15 05:00:00,844 - INFO - Within grace period (0.84s). Recording for current hour starting at 2025-05-15 05:00:00
+2025-05-15 05:00:00,844 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250515_050000.mp4 for 3599.16 seconds
+2025-05-15 06:00:00,617 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250515_050000.mp4
+2025-05-15 06:00:00,617 - INFO - Within grace period (0.62s). Recording for current hour starting at 2025-05-15 06:00:00
+2025-05-15 06:00:00,617 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250515_060000.mp4 for 3599.38 seconds
+2025-05-15 07:00:00,269 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250515_060000.mp4
+2025-05-15 07:00:00,269 - INFO - Within grace period (0.27s). Recording for current hour starting at 2025-05-15 07:00:00
+2025-05-15 07:00:00,269 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250515_070000.mp4 for 3599.73 seconds
+2025-05-15 08:00:00,283 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250515_070000.mp4
+2025-05-15 08:00:00,283 - INFO - Within grace period (0.28s). Recording for current hour starting at 2025-05-15 08:00:00
+2025-05-15 08:00:00,283 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250515_080000.mp4 for 3599.72 seconds
+2025-05-15 09:00:02,850 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250515_080000.mp4
+2025-05-15 09:00:02,851 - INFO - Within grace period (2.85s). Recording for current hour starting at 2025-05-15 09:00:00
+2025-05-15 09:00:02,851 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250515_090000.mp4 for 3597.15 seconds
+2025-05-15 10:00:00,651 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250515_090000.mp4
+2025-05-15 10:00:00,652 - INFO - Within grace period (0.65s). Recording for current hour starting at 2025-05-15 10:00:00
+2025-05-15 10:00:00,652 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250515_100000.mp4 for 3599.35 seconds
