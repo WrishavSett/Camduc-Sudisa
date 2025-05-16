@@ -1,0 +1,17 @@
+2025-05-16 10:38:33,091 - INFO - Too late for current hour. Waiting 1286.91s until next hour: 2025-05-16 11:00:00
+2025-05-16 11:00:00,000 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250516_110000.mp4 for 3600.00 seconds
+2025-05-16 12:00:02,345 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250516_110000.mp4
+2025-05-16 12:00:02,345 - INFO - Within grace period (2.35s). Recording for current hour starting at 2025-05-16 12:00:00
+2025-05-16 12:00:02,345 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250516_120000.mp4 for 3597.65 seconds
+2025-05-16 13:00:00,377 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250516_120000.mp4
+2025-05-16 13:00:00,377 - INFO - Within grace period (0.38s). Recording for current hour starting at 2025-05-16 13:00:00
+2025-05-16 13:00:00,378 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250516_130000.mp4 for 3599.62 seconds
+2025-05-16 14:00:01,496 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250516_130000.mp4
+2025-05-16 14:00:01,496 - INFO - Within grace period (1.50s). Recording for current hour starting at 2025-05-16 14:00:00
+2025-05-16 14:00:01,496 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250516_140000.mp4 for 3598.50 seconds
+2025-05-16 15:00:00,260 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250516_140000.mp4
+2025-05-16 15:00:00,260 - INFO - Within grace period (0.26s). Recording for current hour starting at 2025-05-16 15:00:00
+2025-05-16 15:00:00,260 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250516_150000.mp4 for 3599.74 seconds
+2025-05-16 16:00:00,279 - INFO - Video saved successfully: D:/Camduc-Sudisa/paintai/videos\20250516_150000.mp4
+2025-05-16 16:00:00,279 - INFO - Within grace period (0.28s). Recording for current hour starting at 2025-05-16 16:00:00
+2025-05-16 16:00:00,279 - INFO - Starting video recording: D:/Camduc-Sudisa/paintai/videos\20250516_160000.mp4 for 3599.72 seconds

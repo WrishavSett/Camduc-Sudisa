@@ -68,14 +68,16 @@ class VideoProcessor:
                     hour_end_time = start_time + timedelta(hours=1, seconds=60)  # Add 60s buffer
 
                     if now < hour_end_time:
-                        self.logger.info(f"Skipping {video_file} — still within the hour + 60s buffer.")
-                        print("[WAIT] " + f"Skipping {video_file} — still within the hour + 60s buffer.")
+                        sleep_duration = (hour_end_time - now).total_seconds()
+                        self.logger.info(f"Skipping {video_file} — still within the hour + 60s buffer. Sleeping for {sleep_duration:.2f} seconds.")
+                        print("[WAIT] " + f"Skipping {video_file} — still within the hour + 60s buffer. Sleeping for {sleep_duration:.2f} seconds.")
+                        time.sleep(sleep_duration)
                         continue
 
-                    # # Skip very recent files to ensure .mp4 is fully closed
-                    # if (time.time() - os.path.getmtime(video_path)) < 10:
-                    #     self.logger.info(f"Skipping {video_file} — file too recent.")
-                    #     continue
+                    # Skip very recent files to ensure .mp4 is fully closed
+                    if (time.time() - os.path.getmtime(video_path)) < 10:
+                        self.logger.info(f"Skipping {video_file} — file too recent.")
+                        continue
 
                     # Process the video
                     print(f"[PROCESS] Starting processing for: {video_file}")
@@ -91,7 +93,7 @@ class VideoProcessor:
                     time.sleep(2)
 
         except KeyboardInterrupt:
-            print("\n[EXIT] Ctrl+C pressed. Exiting gracefully...")
+            print("\n[EXIT] Ctrl+C pressed. \nShutting Down")
             self.logger.info("KeyboardInterrupt received. Exiting processing loop.")
 
     def process_video(self, video_path):
