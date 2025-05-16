@@ -73,7 +73,7 @@ class VideoSaver:
                 while retry_count < MAX_RETRIES:
                     try:
                         ffmpeg.input(self.config['rtsp_url'], **self.args) \
-                            .filter('fps', fps=10) \
+                            .filter('fps', fps=15) \
                             .filter('scale', 1280, 720) \
                             .output(video_path, t=remaining, vcodec='libx264', pix_fmt='yuv420p', preset='ultrafast') \
                             .overwrite_output() \
