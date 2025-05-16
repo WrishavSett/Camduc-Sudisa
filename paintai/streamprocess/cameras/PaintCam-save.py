@@ -35,6 +35,8 @@ class VideoSaver:
 
     def save_video_stream(self):
         """Captures the RTSP stream and saves it as aligned hourly videos with a 59-second start grace period."""
+        MAX_RETRIES = 5
+
         while True:
             try:
                 now = datetime.now()
@@ -42,24 +44,20 @@ class VideoSaver:
                 delay = (now - this_hour).total_seconds()
 
                 if delay <= 59:
-                    # Still in grace period for current hour, start recording
                     start_time = this_hour
                     self.logger.info(f"Within grace period ({delay:.2f}s). Recording for current hour starting at {start_time}")
                 else:
-                    # Too late for current hour, wait for next
                     start_time = this_hour + timedelta(hours=1)
                     wait_seconds = (start_time - now).total_seconds()
                     self.logger.info(f"Too late for current hour. Waiting {wait_seconds:.2f}s until next hour: {start_time}")
                     time.sleep(wait_seconds)
 
-                    # Re-check after sleep
                     now = datetime.now()
                     delay = (now - start_time).total_seconds()
                     if delay > 59:
                         self.logger.warning(f"Start delay {delay:.2f}s exceeds grace period after wake-up. Skipping hour: {start_time}")
                         continue
 
-                # Determine end time and actual recording duration
                 end_time = start_time + timedelta(hours=1)
                 remaining = (end_time - datetime.now()).total_seconds()
 
@@ -67,25 +65,34 @@ class VideoSaver:
                     self.logger.warning(f"No time left to record. Skipping hour: {start_time}")
                     continue
 
-                # Define output path based on the start time of the intended hour
                 timestamp = start_time.strftime('%Y%m%d_%H%M%S')
                 video_path = os.path.join(self.config['videodir'], f"{timestamp}.mp4")
-
                 self.logger.info(f"Starting video recording: {video_path} for {remaining:.2f} seconds")
 
-                # Run ffmpeg to capture the stream
-                ffmpeg.input(self.config['rtsp_url'], **self.args) \
-                    .filter('fps', fps=10) \
-                    .filter('scale', 1280, 720) \
-                    .output(video_path, t=remaining, vcodec='libx264', pix_fmt='yuv420p', preset='ultrafast') \
-                    .overwrite_output() \
-                    .run()
+                retry_count = 0
+                while retry_count < MAX_RETRIES:
+                    try:
+                        ffmpeg.input(self.config['rtsp_url'], **self.args) \
+                            .filter('fps', fps=10) \
+                            .filter('scale', 1280, 720) \
+                            .output(video_path, t=remaining, vcodec='libx264', pix_fmt='yuv420p', preset='ultrafast') \
+                            .overwrite_output() \
+                            .run()
 
-                self.logger.info(f"Video saved successfully: {video_path}")
-                self.video_queue.put(video_path)
+                        self.logger.info(f"Video saved successfully: {video_path}")
+                        self.video_queue.put(video_path)
+                        break  # success
+                    except ffmpeg.Error as fferr:
+                        retry_count += 1
+                        self.logger.error(f"[RETRY {retry_count}/{MAX_RETRIES}] ffmpeg error while saving {video_path}: {fferr}")
+                        wait_time = 5 * (2 ** (retry_count - 1))  # exponential backoff
+                        self.logger.info(f"Waiting {wait_time}s before retrying.")
+                        time.sleep(wait_time)
 
+                        if retry_count == MAX_RETRIES:
+                            self.logger.error(f"Failed to record {video_path} after {MAX_RETRIES} retries. Skipping.")
             except Exception as e:
-                self.logger.error(f"Error during video recording: {e}")
+                self.logger.error(f"Unexpected error in video loop: {e}")
 
     # def start(self):
     #     """Start video saving in a separate thread."""
