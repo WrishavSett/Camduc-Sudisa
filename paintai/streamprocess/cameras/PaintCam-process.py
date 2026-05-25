@@ -14,10 +14,10 @@ class VideoProcessor:
             "camera_id": 2,
             "region_points": [(100, 200), (1180, 200), (1180, 500), (100, 500)],
             "url": "http://localhost:8000/ai/getcampayload",
-            "logdir": "D:/RohitDa/Camduc/paintai/logs",
-            "processed_logdir": "D:/RohitDa/Camduc/paintai/processed_logs",
-            "videodir": "D:/RohitDa/Camduc/paintai/videos",
-            "model_path": "D:/RohitDa/Camduc/Iter3.4_Sub.pt"
+            "logdir": "D:/Rohit_Sinha/Camduc/paintai/logs",
+            "processed_logdir": "D:/Rohit_Sinha/Camduc/paintai/processed_logs",
+            "videodir": "D:/Rohit_Sinha/Camduc/paintai/videos",
+            "model_path": "D:/Rohit_Sinha/Camduc/Iter3.4_Sub.pt"
         }
 
         os.makedirs(self.config['logdir'], exist_ok=True)

@@ -11,8 +11,8 @@ class VideoSaver:
     def __init__(self):
         self.config = {
             "camera": "PaintCam-save",
-            "logdir": "D:/RohitDa/Camduc/paintai/logs",
-            "videodir": "D:/RohitDa/Camduc/paintai/videos",
+            "logdir": "D:/Rohit_Sinha/Camduc/paintai/logs",
+            "videodir": "D:/Rohit_Sinha/Camduc/paintai/videos",
             "rtsp_url": "rtsp://Localhost:18554/mystream"
         }
 
